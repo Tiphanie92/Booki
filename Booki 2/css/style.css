@@ -1,4 +1,4 @@
-
+/*----------------------------------------------------------------Général------------------------------------------------------------------*/
 *
 {
    font-family: 'Raleway', sans-serif;
@@ -13,7 +13,7 @@ body
     margin: 0 40px 0 40px;
 }
 
-/*Header,Barre de naviguation*/
+/*--------------------------------------------------------Header,Barre de naviguation------------------------------------------------------*/
 
 header
 {
@@ -47,8 +47,7 @@ header ul li
     margin-left: 60px;
 }
 
-
-/*main*/
+/*-----------------------------------------------------------------main--------------------------------------------------------------------*/
 
 .titre-recherche h1
 {
@@ -63,18 +62,16 @@ header ul li
     padding-bottom: 15px;
 }
 
-/*Barre de recherche*/
+/*-----------------------------------------------------------Barre de recherche------------------------------------------------------------*/
 
 #recherche
 {
-    padding-left: 40px;
-    padding-top: 25px;
+    padding: 25px 0  0 40px;
 }
 
 #recherche p
 {
-    padding-top: 10px;
-    padding-bottom: 20px;
+    padding: 10px 0 20px 0;
     font-weight: 500;
 }
 
@@ -126,6 +123,7 @@ input[type=text]:focus
     color: white;
 }
 
+/*-----------------Effet de survol-----------------*/
 .bouton:before,
 .bouton:after 
 {
@@ -152,6 +150,7 @@ input[type=text]:focus
 {
     transform: none;
 }
+/*----------------Fin d'effet de survol------------*/
 
 .bouton-mobile
 {
@@ -168,12 +167,12 @@ input[type=text]:focus
     background-color: #f2f2f2;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    border-color: #f2f2f2 solid 2px;
+    border: #f2f2f2 solid 2px;
     font-size: 19px;
     padding: 15px;
 }
 
-/*Filtres*/
+/*-----------------------------------------------------------Filtres-----------------------------------------------------------------------*/
 
 .selection
 {
@@ -225,7 +224,7 @@ input[type=text]:focus
     font-weight: bold;
 }
 
-/*Information*/
+/*-----------------------------------------------------------Information-------------------------------------------------------------------*/
 
 .info
 {
@@ -260,7 +259,8 @@ input[type=text]:focus
     color: #0065fc;
 }
 
-/*Hebergements*/
+/*----------------------------------------------------------------Hebergements-------------------------------------------------------------*/
+
 .card-images 
 {
     background-color: white;
@@ -285,11 +285,6 @@ input[type=text]:focus
   flex-wrap: wrap;
   column-gap: 30px;
   padding-bottom: 15px;
-}
-
-.card :hover
-{
-    background-color:#deebff;
 }
 
 .card 
@@ -344,22 +339,30 @@ input[type=text]:focus
     font-weight: bolder;
 }
 
-/*les plus populaires*/
+#hebergements-a-marseille h4:hover /*Effet de survol*/
+{
+    color: #0065fc;
+}
+
+.card :hover /*Effet de survol*/
+{
+    background-color: #deebff;
+}
+
+/*------------------------------------------------------------les plus populaires----------------------------------------------------------*/
 
 .titre-pop
 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 1px;
-    padding-top: 20px;
+    padding: 20px 0 1px 0;
     font-weight: bold;
 }
 
 aside
 {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 20px 0 20px;
     background-color: #f2f2f2;
     border-radius: 20px;
     width: 35%;
@@ -397,12 +400,10 @@ aside
    width: 40%;
    height: 180px;
    border-radius: 15px 0 0 15px;
-   padding-left: 2px;
-   padding-top: 2px;
-   padding-bottom: 2px;
+   padding: 2px 0 2px 2px;
 }
 
-.hotel-pop:hover
+.hotel-pop:hover /*Effet de survol*/
 {
     background-color: #deebff;
 }
@@ -419,12 +420,11 @@ aside
     margin: 0;
 }
 
-/*Activités a Marseille*/
+/*----------------------------------------------------------Activités a Marseille----------------------------------------------------------*/
 
 #activites-marseille
 {
-   margin-top: 50px;
-   margin-bottom: 50px;
+   margin: 50px 0 50px 0;
 }
 
 .activites
@@ -548,7 +548,12 @@ aside
    border-radius: 15px 15px 0 0;
 }
 
-/*footer*/
+.texte-activites :hover /*Effet de survol*/
+{
+    color: #0065fc;
+}
+
+/*--------------------------------------------------------------footer---------------------------------------------------------------------*/
 
 footer
 {
@@ -560,17 +565,13 @@ footer
 
 .plus 
 {
-   
-    padding-bottom: 10px;
-    padding-right: 350px;
-    padding-left: 28px;
+    padding: 0 350px 10px 28px;
 }
 
 h4
 {
     font-weight: bolder;
-    padding-left: 40px;
-    padding-top: 10px;
+    padding: 10px 0 0 40px;
     margin-bottom: 0;
 }
 
@@ -580,8 +581,15 @@ ul li
     margin-bottom: 7px;
 }
 
-                                /*Responsive*/
-/*Mobile*/
+ul :hover /*Effet de survol*/
+{
+    color: #0065fc;
+    font-weight: bold;
+}
+
+/*----------------------------------------------------------Responsive---------------------------------------------------------------------*/
+
+/*-------------------------Mobile-------------------------*/
 @media screen and (max-width: 767px) 
 {
     body 
@@ -590,7 +598,7 @@ ul li
         padding: 0;
     }
 
-/*Barre de navigation*/
+/*------Barre de navigation-----*/
 
     header 
     {
@@ -610,14 +618,14 @@ ul li
         padding-right: 90px;
     }
 
-    .nav1 a:hover
+    .nav1 a:hover /*Effet de survol*/
     {
         border-top: 0;
         border-bottom: #0065fc 4px solid;
         padding: 0 70px 17px 70px;
     }
 
-    .nav2 a:hover
+    .nav2 a:hover /*Effet de survol*/
     {
         border-top: 0;
         border-bottom: #0065fc 4px solid;
@@ -629,7 +637,7 @@ ul li
         padding-right: 120px;
     }
 
-/*Barre de recherche*/
+/*--------Barre de recherche------*/
 
     .titre-recherche
     {
@@ -661,7 +669,7 @@ ul li
         cursor: pointer;
     }
 
-/*Filres*/
+/*------------Filres----------*/
 
     .titre-filtres
     {
@@ -676,7 +684,7 @@ ul li
         padding: 15px 0 5px 15px;
     }
 
-/*Hebergements et populaire*/
+/*-Hebergements et populaire-*/
 
     #titre-hebergements
     {
@@ -719,76 +727,81 @@ ul li
         padding-left: 5px;
     }
 
-/*Activites à Marseille*/
+/*----Activites à Marseille----*/
 
-#activites-marseille
-{
-    padding: 0 20px 0 20px;
-    margin: 0;
+    #activites-marseille
+    {
+        padding: 0 20px 0 20px;
+        margin: 0;
+    }
+
+    #titre-activites
+    {
+        padding-left: 5px;
+    }
+
+    .activites
+    {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .grande
+    {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .grande-images,
+    .moyenne-images1,
+    .moyenne-images2,
+    .petite-images1,
+    .petite-images2
+    {
+        height: 200px;
+        width: 100%;
+    }
+
+    .moyenne-petite1,
+    .moyenne-petite2
+    {
+        width: 100%;
+        height: auto;
+    }
+
+    .moyenne1,
+    .petite1,
+    .petite2,
+    .moyenne2
+    {
+        margin-bottom: 30px;
+    }
+
+/*-------------footer----------*/
+
+    footer 
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    .plus h4 
+    {
+        padding:0;
+        margin: 25px 0 15px 0;
+    }
+
+    .plus ul 
+    {
+        padding: 0;
+        margin: 0;
+    }
 }
 
-#titre-activites
+/*----------------------Tablette-------------------*/
+@media screen and (width: 768px)
 {
-  padding-left: 5px;
-}
 
-.activites
-{
-flex-direction: column;
-height: auto;
-}
-
-.grande
-{
-width: 100%;
-margin-bottom: 30px;
-}
-
-.grande-images,
-.moyenne-images1,
-.moyenne-images2,
-.petite-images1,
-.petite-images2
-{
-height: 200px;
-width: 100%;
-}
-
-.moyenne-petite1,
-.moyenne-petite2
-{
-width: 100%;
-height: auto;
-}
-
-.moyenne1,
-.petite1,
-.petite2,
-.moyenne2
-{
- margin-bottom: 30px;
-}
-
-/*footer*/
-
-footer 
-{
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-}
-
-.plus h4 
-{
-    padding:0;
-    margin-top: 25px;
-    margin-bottom: 15px;
-}
-
-.plus ul 
-{
-    padding: 0;
-    margin: 0;
-}
 }
