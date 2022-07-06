@@ -111,46 +111,8 @@ input[type=text]:focus
     color:white;
     font-size: 16px;
     font-weight: bold;
+    cursor: pointer;
 }
-
-.bouton 
-{
-    display: inline-block;
-    font-weight: bold;
-    position: relative;
-    min-width: 132px;
-    text-decoration: none;
-    color: white;
-}
-
-/*-----------------Effet de survol-----------------*/
-.bouton:before,
-.bouton:after 
-{
-    width: 80px;
-    height: 50px;
-    position: absolute;
-    content: "";
-    display: inline-block;
-    background-color: #0065fc;
-    border-radius: 50%;
-    transition: transform 1s ease;
-    transform: scale(0);
-    z-index: -1;
-}
-
-.bouton:after 
-{
-    bottom: -15%;
-    right: 40%;
-}
-
-.bouton:hover:before,
-.bouton:hover:after 
-{
-    transform: none;
-}
-/*----------------Fin d'effet de survol------------*/
 
 .bouton-mobile
 {
@@ -207,9 +169,9 @@ input[type=text]:focus
   align-items: center; 
 }
 
-.filtrage :hover
+.filtrage :hover /*Effet de survol*/
 {
-    background-color:#deebff; 
+    color:#0065fc; 
 }
 
 .fa-filtre
@@ -803,5 +765,23 @@ ul :hover /*Effet de survol*/
 /*----------------------Tablette-------------------*/
 @media screen and (width: 768px)
 {
+/*filtres*/
+.filtrage
+{
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+}
 
+#hebergements
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#hebergements-a-marseille
+{
+    width: 100%;
+}
 }
