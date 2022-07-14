@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalizecss.css"/>
     <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap">
     <script src="https://kit.fontawesome.com/9bfa0e7eeb.js" crossorigin="anonymous"></script>
     <title>Booki</title>
 </head>
@@ -38,7 +38,7 @@
         <div class="search">
         <form method="post" action="#" id="formulaire">
             <i class="fa-solid fa-location-dot"></i>
-            <input type="text" name="Ville" id="Ville" placeholder="Marseille,France" size="30" maxlength="30"/>
+            <input type="text" name="Ville" id="Ville" placeholder="Marseille, France" size="30" maxlength="30"/>
             <button type="button" class="bouton-desktop-tablette">Rechercher</button>
             <button type="button" class="bouton-mobile"><i class="fa-solid fa-magnifying-glass loupe"></i></button><!--cacher loupe pour tablette et ordinateur-->
         </form>
@@ -85,7 +85,7 @@
                         <div class="card-images">
                         <img class="card-photos" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="auberge de la cannebiere"/>
                         <h3>Auberge La Cannebière</h3>
-                        <p>Nuit à partir de 25€</p>
+                        <p>Nuit à partir de <span>25€</span></p>
                         <div class="card-icones">
                             <i class="fa-solid fa-star etoile-bleu"></i>
                             <i class="fa-solid fa-star etoile-bleu"></i>
@@ -155,7 +155,7 @@
                         <div class="card-images">
                         <img class="card-photos" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="auberge le panier">
                         <h3>Auberge Le Panier</h3>
-                        <p>Nuit à partir de 23€</p>
+                        <p>Nuit à partir de <span>23€</span></p>
                         <div class="card-icones">
                             <i class="fa-solid fa-star etoile-bleu"></i>
                             <i class="fa-solid fa-star etoile-bleu"></i>
@@ -203,13 +203,13 @@
                         <div class="texte-pop">
                         <h3>Hôtel le soleil du matin</h3>
                         <p class="overflow">Nuit à partir de 128€</p>
-                        <figure class="ico-pop">
+                        <div class="ico-pop">
                             <i class="fa-solid fa-star etoile-bleu"></i>
                             <i class="fa-solid fa-star etoile-bleu"></i>
                             <i class="fa-solid fa-star etoile-bleu"></i>
                             <i class="fa-solid fa-star etoile-bleu"></i>
                             <i class="fa-solid fa-star etoile-bleu"></i>
-                        </figure>
+                        </div>
                         </div>  
                     </div>
                     </a>
@@ -220,13 +220,13 @@
                         <div class="texte-pop">
                         <h3>Au coeur de l'eau Chambres d'hôtes</h3>
                         <p class="overflow">Nuit à partir de 71€</p>
-                        <figure class="ico-pop">
+                        <div class="ico-pop">
                             <i class="fa-solid fa-star etoile-bleu"></i>
                             <i class="fa-solid fa-star etoile-bleu"></i>
                             <i class="fa-solid fa-star etoile-bleu"></i>
                             <i class="fa-solid fa-star etoile-bleu"></i>
                             <i class="fa-solid fa-star etoile-grise"></i>
-                        </figure>
+                        </div>
                         </div> 
                     </div>
                     </a>
@@ -237,13 +237,13 @@
                         <div class="texte-pop">
                         <h3>Hôtel Tout bleu et Blanc</h3>
                         <p class="overflow">Nuit à partir de 68€</p>
-                        <figure class="ico-pop">
+                        <div class="ico-pop">
                             <i class="fa-solid fa-star etoile-bleu"></i>
                             <i class="fa-solid fa-star etoile-bleu"></i>
                             <i class="fa-solid fa-star etoile-bleu"></i>
                             <i class="fa-solid fa-star etoile-bleu"></i>
                             <i class="fa-solid fa-star etoile-grise"></i>
-                        </figure>
+                        </div>
                         </div>
                         </div>
                         </a>
@@ -311,20 +311,18 @@
             <footer>
                 <div class="contact">
                 <div class="plus">
-                    <div class="titre-contact"><h4>A propos</h4></div>
+                    <h4>A propos</h4>
                     <p>Fonctionnement du site</p>
                     <p>Conditions générales de vente</p>
                     <p>Données et confidentialité</p>
                 </div>
                 <div class="plus">
-                    <div class="titre-contact">
-                    <h4>Nos hébergements</h4></div>
+                    <h4>Nos hébergements</h4>
                     <p>Charte qualité</p>
                     <p>Soumettre votre hôtel</p>
                 </div>
                 <div class="plus">
-                    <div class="titre-contact">
-                    <h4>Assistance</h4></div> 
+                    <h4>Assistance</h4> 
                     <p>Centre d'aide</p>
                     <p>Nous contacter</p>         
                 </div>
